@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import "./App.css";
 import MovieList from './components/MovieList';
 
+
 const App: React.FC = () => {
   const [movies] = useState([
     {
@@ -61,8 +62,13 @@ const App: React.FC = () => {
   ]);
   return(
     <div className="app-container">
-      <h1 className="app-title">🎬 Movie List</h1>
+      <h1 className="app-title">🎬 Lista de Peliculas</h1>
       <MovieList movies={movies} />
+      <footer className="footer">
+        © 2024 MovieApp | Diseñado por{" "}
+        <a href="">Mildred Cedeño</a>
+        <br />
+      </footer>
     </div>
   );
 };
